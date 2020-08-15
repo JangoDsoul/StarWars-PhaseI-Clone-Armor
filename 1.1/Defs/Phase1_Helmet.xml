@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Phase I Standard Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_Standard_Helmet</defName>
+		<label>Phase I Standard Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/StandardPhaseI/Standard_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.20</SocialImpact>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/StandardPhaseI/Standard_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+<!-- Phase I Sergeant Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_Sergeant_Helmet</defName>
+		<label>Phase I Sergeant Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/SergeantPhaseI/Sergeant_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.20</SocialImpact>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/SergeantPhaseI/Sergeant_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- Phase I Lieutenant Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_Lieutenant_Helmet</defName>
+		<label>Phase I Lieutenant Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/LieutenantPhaseI/Lieutenant_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.20</SocialImpact>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/LieutenantPhaseI/Lieutenant_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- Phase I Captain Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_Captain_Helmet</defName>
+		<label>Phase I Captain Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/CaptainPhaseI/Captain_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.20</SocialImpact>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/CaptainPhaseI/Captain_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+<!-- Phase I Commander Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_Commander_Helmet</defName>
+		<label>Phase I Commander Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/CommanderPhaseI/Commander_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.20</SocialImpact>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/CommanderPhaseI/Commander_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[JDS] Star Wars Phase I Clone Armor</name>
+	<author>JangoD'soul</author>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+		<li>1.2</li>		
+	</supportedVersions>
+	<packageId>JangoDsoul.StarWars.PICAS</packageId>
+	<description>Armor set based off of StarWar:Clone War at the Start of the war</description>
+</ModMetaData>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ARC Sergeant Phase I Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_ARC1_Helmet</defName>
+		<label>ARC Sergeant Phase I Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone ARC troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/ARC1Helmet/ARC1_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.35</SocialImpact>
+		<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+		<AimingDelayFactor>-0.10</AimingDelayFactor>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/ARC1Helmet/ARC1_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+<!-- Phase I ARC Lieutenant Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_ARC2_Helmet</defName>
+		<label>Phase I ARC Lieutenant Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone ARC troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/ARC2Helmet/ARC2_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.35</SocialImpact>
+		<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+		<AimingDelayFactor>-0.10</AimingDelayFactor>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/ARC2Helmet/ARC2_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- Phase I ARC Captain Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_ARC3_Helmet</defName>
+		<label>Phase I ARC Captain Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone ARC troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/ARC3Helmet/ARC3_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.35</SocialImpact>
+		<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+		<AimingDelayFactor>-0.10</AimingDelayFactor>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/ARC3Helmet/ARC3_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- Phase I ARC Commander Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_ARC4_Helmet</defName>
+		<label>Phase I ARC Commander Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone ARC troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/ARC4Helmet/ARC4_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.35</SocialImpact>
+		<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+		<AimingDelayFactor>-0.10</AimingDelayFactor>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/ARC4Helmet/ARC4_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+</Defs>

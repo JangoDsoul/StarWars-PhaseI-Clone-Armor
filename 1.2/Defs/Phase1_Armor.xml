@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Phase I Standard Armor -->
+  <ThingDef ParentName="ArmorMachineableBase">
+		<defName>PhaseI_Standard_Armor</defName>
+		<label>Phase I Standard Armor</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Armor/StandardPhaseI/Standard_PhaseI_armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>36000</WorkToMake>
+		<MaxHitPoints>300</MaxHitPoints>
+		<Mass>12.5</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.80</ArmorRating_Heat>
+		<Insulation_Cold>30</Insulation_Cold>
+		<Insulation_Heat>20</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.15</MoveSpeed>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>120</Steel>
+		<Plasteel>50</Plasteel>
+		<ComponentIndustrial>8</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Armor/StandardPhaseI/Standard_PhaseI_armor</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+<!-- Phase I Sergeant Armor -->
+  <ThingDef ParentName="ArmorMachineableBase">
+		<defName>PhaseI_Sergeant_Armor</defName>
+		<label>Phase I Sergeant Armor</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Armor/SergeantPhaseI/Sergeant_PhaseI_armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>36000</WorkToMake>
+		<MaxHitPoints>300</MaxHitPoints>
+		<Mass>12.5</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.91</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.7</ArmorRating_Heat>
+		<Insulation_Cold>30</Insulation_Cold>
+		<Insulation_Heat>20</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.15</MoveSpeed>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>120</Steel>
+		<Plasteel>50</Plasteel>
+		<ComponentIndustrial>8</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Armor/SergeantPhaseI/Sergeant_PhaseI_armor</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- Phase I Lieutenant Armor -->
+  <ThingDef ParentName="ArmorMachineableBase">
+		<defName>PhaseI_Lieutenant_Armor</defName>
+		<label>Phase I Lieutenant Armor</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Armor/LieutenantPhaseI/Lieutenant_PhaseI_armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>36000</WorkToMake>
+		<MaxHitPoints>300</MaxHitPoints>
+		<Mass>12.5</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.91</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.7</ArmorRating_Heat>
+		<Insulation_Cold>30</Insulation_Cold>
+		<Insulation_Heat>20</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.15</MoveSpeed>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>120</Steel>
+		<Plasteel>50</Plasteel>
+		<ComponentIndustrial>8</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Armor/LieutenantPhaseI/Lieutenant_PhaseI_armor</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- Phase I Captain Armor -->
+  <ThingDef ParentName="ArmorMachineableBase">
+		<defName>PhaseI_Captain_Armor</defName>
+		<label>Phase I Captain Armor</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Armor/CaptainPhaseI/Captain_PhaseI_armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>36000</WorkToMake>
+		<MaxHitPoints>300</MaxHitPoints>
+		<Mass>12.5</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.91</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.7</ArmorRating_Heat>
+		<Insulation_Cold>30</Insulation_Cold>
+		<Insulation_Heat>20</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.15</MoveSpeed>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>120</Steel>
+		<Plasteel>50</Plasteel>
+		<ComponentIndustrial>8</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Armor/CaptainPhaseI/Captain_PhaseI_armor</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- Phase I Commander Armor -->
+  <ThingDef ParentName="ArmorMachineableBase">
+		<defName>PhaseI_Commander_Armor</defName>
+		<label>Phase I Commander Armor</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Armor/CommanderPhaseI/Commander_PhaseI_armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>36000</WorkToMake>
+		<MaxHitPoints>300</MaxHitPoints>
+		<Mass>12.5</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.91</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.7</ArmorRating_Heat>
+		<Insulation_Cold>30</Insulation_Cold>
+		<Insulation_Heat>20</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.15</MoveSpeed>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>120</Steel>
+		<Plasteel>50</Plasteel>
+		<ComponentIndustrial>8</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Armor/CommanderPhaseI/Commander_PhaseI_armor</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+</Defs>

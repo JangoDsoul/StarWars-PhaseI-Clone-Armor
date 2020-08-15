@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Phase I ARF Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>PhaseI_ARF_Helmet</defName>
+		<label>Phase I ARF Helmet</label>
+		<description>Created by Kaminoan armorsmiths for the clone troopers of the Galactic Republic</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Helmet/ARFPhaseIHelmet/ARF_PhaseI_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.50</ToxicSensitivity>
+		<SocialImpact>0.50</SocialImpact>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Helmet/ARFPhaseIHelmet/ARF_PhaseI_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+
+</Defs>
