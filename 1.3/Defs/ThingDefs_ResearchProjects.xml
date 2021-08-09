@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==============================================
+	================ Research Tab ====================
+	===============================================-->
+
+	<ResearchTabDef>
+		<defName>JDSPhaseIArmortab</defName>
+		<label>Phase I Armor</label>
+	</ResearchTabDef>
+
+
+	<!--==============================================
+	================== Research ======================
+	===============================================-->
+
+  <ResearchProjectDef Name="JDSWPhaseOneRPBase" Abstract="True">
+	<tab>JDSPhaseIArmortab</tab>
+	<techLevel>Spacer</techLevel>
+  </ResearchProjectDef>
+
+	<!--============== Manual ==============-->
+
+  <ResearchProjectDef ParentName="JDSWPhaseOneRPBase">
+    <defName>JDSPhaseIArmorStart</defName>
+    <label>Standarded Training</label>
+    <description>Unknown</description>
+	<baseCost>1500</baseCost>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2.90</researchViewY>
+	<prerequisites>
+		<li>Fabrication</li>
+	</prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="JDSWPhaseOneRPBase">
+    <defName>JDSPhaseIArmorLeadership</defName>
+    <label>Leadership Training</label>
+    <description>Unknown</description>
+	<baseCost>2000</baseCost>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.35</researchViewY>
+	<prerequisites>
+		<li>JDSPhaseIArmorStart</li>
+	</prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="JDSWPhaseOneRPBase">
+    <defName>JDSPhaseIArmorSpecialist</defName>
+    <label>Specialist Training</label>
+    <description>Unknown</description>
+	<baseCost>2500</baseCost>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.05</researchViewY>
+	<prerequisites>
+		<li>JDSPhaseIArmorStart</li>
+	</prerequisites>
+  </ResearchProjectDef>  
+  
+  <ResearchProjectDef ParentName="JDSWPhaseOneRPBase">
+    <defName>JDSPhaseIArmorARC</defName>
+    <label>ARC Training</label>
+    <description>Unknown</description>
+	<baseCost>3850</baseCost>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.90</researchViewY>
+	<prerequisites>
+		<li>JDSPhaseIArmorStart</li>
+	</prerequisites>
+  </ResearchProjectDef>  
+  
+  <ResearchProjectDef ParentName="JDSWPhaseOneRPBase">
+    <defName>JDSPhaseIArmorComd</defName>
+    <label>Commando Training</label>
+    <description>Unknown</description>
+	<baseCost>6500</baseCost>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.90</researchViewY>
+	<prerequisites>
+	  <li>JDSPhaseIArmorARC</li>
+	  <li>JDSPhaseIArmorSpecialist</li>		
+	</prerequisites>
+  </ResearchProjectDef>    
+  
+  
+</Defs>

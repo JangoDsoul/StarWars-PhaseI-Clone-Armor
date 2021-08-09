@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=== Category Base ===-->
+  
+    <ThingCategoryDef>
+		<defName>JDSPhaseIArmory_Main</defName>
+		<label>Phase I Armory</label>
+		<parent>Root</parent>
+	</ThingCategoryDef>
+  
+	<!--=== Helmet ===-->
+
+	<ThingCategoryDef>
+		<defName>JDSPhaseIArmoryHelmet_Standard</defName>
+		<label>Phase I Headgear</label>
+		<parent>JDSPhaseIArmory_Main</parent>
+	</ThingCategoryDef>  
+  
+	<!--=== Armor ===-->
+  
+    <ThingCategoryDef>
+		<defName>JDSPhaseIArmoryArmor_Standard</defName>
+		<label>Phase I Armor</label>
+		<parent>JDSPhaseIArmory_Main</parent>
+	</ThingCategoryDef>
+  
+	<!--=== Gear ===-->  
+  
+	<ThingCategoryDef>
+		<defName>JDSPhaseIArmoryGear_Standard</defName>
+		<label>Phase I Gear</label>
+		<parent>JDSPhaseIArmory_Main</parent>
+	</ThingCategoryDef>  
+  
+	<ThingCategoryDef>
+		<defName>JDSPhaseIArmoryBP_Standard</defName>
+		<label>Phase I Backpack</label>
+		<parent>JDSPhaseIArmory_Main</parent>
+	</ThingCategoryDef>    
+  
+</Defs>
