@@ -6,1846 +6,1851 @@
 	===============================================-->
 
   <ThingDef Name="JDSWPhaseOneHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
-	<techLevel>Spacer</techLevel>
-	<tradeability>Sellable</tradeability>
-	<generateCommonality>0</generateCommonality>
-	<generateAllowChance>0</generateAllowChance>
-	<graphicData>
-	  <graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-	  <WorkToMake>23000</WorkToMake>
-	  <MaxHitPoints>310</MaxHitPoints>
-	  <Mass>3</Mass>
-	  <ArmorRating_Sharp>1.08</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.60</ArmorRating_Heat>
-	  <!--Insulation_Cold>10</Insulation_Cold-->
-	  <!--Insulation_Heat>6</Insulation_Heat-->
-	  <EquipDelay>1.2</EquipDelay>
-	</statBases>
-	<costList>
-	  <Plasteel>42</Plasteel>
-	  <ComponentSpacer>1</ComponentSpacer>
-	</costList>
-	<recipeMaker>
-	  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-	  <skillRequirements>
-	    <Crafting>7</Crafting>
-	  </skillRequirements>
-	  <recipeUsers Inherit="False">
-	    <li>FabricationBench</li>
-	  </recipeUsers>
-	</recipeMaker>
-	<apparel>
-	  <bodyPartGroups>
-	    <li>FullHead</li>
-	  </bodyPartGroups>
-	  <layers>
-	    <li>Overhead</li>
-	  </layers>
-	  <tags>
-	    <li>EVA</li>
-	    <li>PhaseIHelmet</li>
-	  </tags>
-	  <defaultOutfitTags>
-	    <li>Soldier</li>
-	  </defaultOutfitTags>
-	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
-	</apparel>
-	<thingCategories Inherit="False">
-	  <li>JDSPhaseIArmoryHelmet_Standard</li>
-	</thingCategories>
+	  <techLevel>Spacer</techLevel>
+	  <tradeability>Sellable</tradeability>
+  	<generateCommonality>0</generateCommonality>
+	  <generateAllowChance>0</generateAllowChance>
+	  <graphicData>
+	    <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.1</drawSize>
+	  </graphicData>
+	  <statBases>
+	    <WorkToMake>23000</WorkToMake>
+	    <MaxHitPoints>310</MaxHitPoints>
+	    <Mass>3</Mass>
+	    <ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.60</ArmorRating_Heat>
+	    <!--Insulation_Cold>10</Insulation_Cold-->
+	    <!--Insulation_Heat>6</Insulation_Heat-->
+	    <EquipDelay>1.2</EquipDelay>
+	  </statBases>
+	  <costList>
+	    <Plasteel>42</Plasteel>
+	    <ComponentSpacer>1</ComponentSpacer>
+	  </costList>
+	  <recipeMaker>
+	    <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+	    <skillRequirements>
+	      <Crafting>7</Crafting>
+	    </skillRequirements>
+	    <recipeUsers Inherit="False">
+	      <li>FabricationBench</li>
+	    </recipeUsers>
+	  </recipeMaker>
+	  <apparel>
+	    <bodyPartGroups>
+	      <li>FullHead</li>
+	    </bodyPartGroups>
+	    <layers>
+	      <li>Overhead</li>
+	    </layers>
+	    <tags>
+	      <li>EVA</li>
+	      <li>PhaseIHelmet</li>
+	    </tags>
+	    <defaultOutfitTags>
+	      <li>Soldier</li>
+	    </defaultOutfitTags>
+	    <useDeflectMetalEffect>true</useDeflectMetalEffect>
+	  </apparel>
+	  <thingCategories Inherit="False">
+	    <li>JDSPhaseIArmoryHelmet_Standard</li>
+	  </thingCategories>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Standard) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Standard</defName>
-	<label>Phase I Helmet(Standard)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Standard)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Standard)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetStandard</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Helmet(Standard)</label>
+	  <description>Inside the Phase I helmet, a clone trooper had a life support system, a tracking device for monitoring troop movements, and a display screen, which was built into the helmet's viewplate.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Standard)_UI</texPath>
+	  </graphicData>
+  	<apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Standard)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetStandard</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.03</SocialImpact>
-	</equippedStatOffsets>
-	<recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorStart</researchPrerequisite>
-	</recipeMaker>		
+	    <SocialImpact>+0.03</SocialImpact>
+	  </equippedStatOffsets>
+	  <recipeMaker>
+	    <researchPrerequisite>JDSPhaseIArmorStart</researchPrerequisite>
+	  </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Sergeant) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Sergeant</defName>
-	<label>Phase I Helmet(Sergeant)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Sergeant)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Sergeant)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetSergeant</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Helmet(Sergeant)</label>
+	  <description>Phase I helmet with splashes of color denoted the military ranks of clone trooper officers.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Sergeant)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Sergeant)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetSergeant</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.05</SocialImpact>
-	</equippedStatOffsets>
+	    <SocialImpact>+0.05</SocialImpact>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Lieutenant) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Lieutenant</defName>
-	<label>Phase I Helmet(Lieutenant)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Lieutenant)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Lieutenant)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetLieutenant</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Helmet(Lieutenant)</label>
+	  <description>Phase I helmet with splashes of color denoted the military ranks of clone trooper officers.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Lieutenant)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Lieutenant)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetLieutenant</li>
+	    </tags>
+  	</apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.10</SocialImpact>
-	</equippedStatOffsets>
+	    <SocialImpact>+0.10</SocialImpact>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Captain) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Captain</defName>
-	<label>Phase I Helmet(Captain)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Captain)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Captain)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetCaptain</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Helmet(Captain)</label>
+	  <description>Phase I helmet with splashes of color denoted the military ranks of clone trooper officers.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Captain)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Captain)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetCaptain</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.15</SocialImpact>
-	</equippedStatOffsets>
+	    <SocialImpact>+0.15</SocialImpact>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Commander) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Commander</defName>
-	<label>Phase I Helmet(Commander)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Commander)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Commander)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetCommander</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Helmet(Commander)</label>
+	  <description>Phase I helmet with splashes of color denoted the military ranks of clone trooper officers.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Commander)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Commander)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetCommander</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.20</SocialImpact>
-	</equippedStatOffsets>
+	    <SocialImpact>+0.20</SocialImpact>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (ColdAssault) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_ColdAssault</defName>
-	<label>Phase I Helmet(ColdAssault)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(ColdAssault)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(ColdAssault)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetColdAssault</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>20</Plasteel>
-	  <ComponentSpacer>1</ComponentSpacer>
-	  <Hyperweave>5</Hyperweave>
-	</costList>
-	<statBases>
-	  <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-	  <Insulation_Cold>10</Insulation_Cold>
-	  <Insulation_Heat>5</Insulation_Heat>
-	</statBases>
+	  <label>Phase I Helmet(ColdAssault)</label>
+	  <description>offering temporary protection against the vacuum of space, and the body glove protected the clone from the extreme cold and heat.</description>
+	  <graphicData>
+	   <texPath>Things/Apparel/Phase1_Helmet_(ColdAssault)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(ColdAssault)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetColdAssault</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>20</Plasteel>
+	    <ComponentSpacer>1</ComponentSpacer>
+	    <Hyperweave>5</Hyperweave>
+	  </costList>
+	  <statBases>
+	    <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+	    <Insulation_Cold>10</Insulation_Cold>
+	    <Insulation_Heat>5</Insulation_Heat>
+	  </statBases>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Katarn-Class) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Katarn-Class</defName>
-	<label>Phase I Helmet(Katarn-Class)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Katarn_Class_Helmet_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Katarn_Class_Helmet</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetKatarn-Class</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>50</Plasteel>
-	  <ComponentSpacer>3</ComponentSpacer>
-	</costList>
-	<statBases>
-	  <WorkToMake>25000</WorkToMake>
-	  <MaxHitPoints>220</MaxHitPoints>
-	  <Mass>1.5</Mass>
-	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.60</ArmorRating_Heat>
-	  <EquipDelay>2.5</EquipDelay>
-	</statBases>
+  	<label>Phase I Helmet(Katarn-Class)</label>
+  	<description>The helmet of the Katarn-class armor had a HUD or heads up display that consistently displayed tactical data such as the location and distance to the target.</description>
+  	<graphicData>
+	    <texPath>Things/Apparel/Katarn_Class_Helmet_UI</texPath>
+  	</graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Katarn_Class_Helmet</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetKatarn-Class</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>50</Plasteel>
+	    <ComponentSpacer>3</ComponentSpacer>
+	  </costList>
+	  <statBases>
+	    <WorkToMake>25000</WorkToMake>
+	    <MaxHitPoints>220</MaxHitPoints>
+	    <Mass>1.5</Mass>
+	    <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.60</ArmorRating_Heat>
+	    <EquipDelay>2.5</EquipDelay>
+	  </statBases>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.25</PainShockThreshold>
-	  <MeleeHitChance>+0.15</MeleeHitChance>
-	  <MeleeDodgeChance>+0.20</MeleeDodgeChance>
-	  <ShootingAccuracyPawn>+0.05</ShootingAccuracyPawn>
+	    <PainShockThreshold>+0.25</PainShockThreshold>
+	    <MeleeHitChance>+0.15</MeleeHitChance>
+	    <MeleeDodgeChance>+0.20</MeleeDodgeChance>
+	    <ShootingAccuracyPawn>+0.05</ShootingAccuracyPawn>
       <AimingDelayFactor>-0.50</AimingDelayFactor>
-	</equippedStatOffsets>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorComd</researchPrerequisite>
-    </recipeMaker>	
+	    <researchPrerequisite>JDSPhaseIArmorComd</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Visor) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Visor</defName>
-	<label>Phase I Helmet(Visor)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Visor)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Visor)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetVisor</li>
-	  </tags>
-	</apparel>
+  	<label>Phase I Helmet(Visor)</label>
+  	<description>Phase I Helmet customized with Visor</description>
+  	<graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Visor)_UI</texPath>
+  	</graphicData>
+  	<apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Visor)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetVisor</li>
+	    </tags>
+    </apparel>
     <equippedStatOffsets>
-	  <ShootingAccuracyPawn>+0.05</ShootingAccuracyPawn>
-	</equippedStatOffsets>
+	    <ShootingAccuracyPawn>+0.05</ShootingAccuracyPawn>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Rangefinder) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Rangefinder</defName>
-	<label>Phase I Helmet(Rangefinder)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Rangefinder)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Rangefinder)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetRangefinder</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>43</Plasteel>
-	  <ComponentSpacer>2</ComponentSpacer>
-	</costList>
+  	<label>Phase I Helmet(Rangefinder)</label>
+  	<description>Phase I Helmet customized with Rangefinder</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Rangefinder)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Rangefinder)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetRangefinder</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>43</Plasteel>
+	    <ComponentSpacer>2</ComponentSpacer>
+  	</costList>
     <equippedStatOffsets>
-	  <ShootingAccuracyPawn>+0.15</ShootingAccuracyPawn>
-	</equippedStatOffsets>
+	    <ShootingAccuracyPawn>+0.15</ShootingAccuracyPawn>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (RiseRangefinder) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_RiseRangefinder</defName>
-	<label>Phase I Helmet(RiseRangefinder)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(RiseRangefinder)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(RiseRangefinder)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetRiseRangefinder</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>43</Plasteel>
-	  <ComponentSpacer>2</ComponentSpacer>
-	</costList>
+	  <label>Phase I Helmet(RiseRangefinder)</label>
+	  <description>Phase I Helmet customized with Rangefinder</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(RiseRangefinder)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(RiseRangefinder)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetRiseRangefinder</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>43</Plasteel>
+	    <ComponentSpacer>2</ComponentSpacer>
+	  </costList>
     <equippedStatOffsets>
-	  <ShootingAccuracyPawn>+0.15</ShootingAccuracyPawn>
-	</equippedStatOffsets>
+	    <ShootingAccuracyPawn>+0.15</ShootingAccuracyPawn>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Sonic) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Sonic</defName>
-	<label>Phase I Helmet(Sonic)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Sonic)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Sonic)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetSonic</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>43</Plasteel>
-	  <ComponentSpacer>3</ComponentSpacer>
-	</costList>
+	  <label>Phase I Helmet(Sonic)</label>
+	  <description>Phase I Helmet customized with noise cancelling</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Sonic)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Sonic)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetSonic</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>43</Plasteel>
+	    <ComponentSpacer>3</ComponentSpacer>
+	  </costList>
     <equippedStatOffsets>
-	  <PsychicSensitivityOffset>-0.90</PsychicSensitivityOffset>
-	</equippedStatOffsets>
+	    <PsychicSensitivityOffset>-0.90</PsychicSensitivityOffset>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Pilot) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Pilot</defName>
-	<label>Phase I Helmet(Pilot)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Pilot)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Pilot)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetPilot</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Helmet(Pilot)</label>
+	  <description>Phase I helmet, a clone trooper had a life support system, and tracking device for monitoring troop movements</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Pilot)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Pilot)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetPilot</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <ShootingAccuracyTurret>+0.25</ShootingAccuracyTurret>
-	</equippedStatOffsets>
+	    <ShootingAccuracyTurret>+0.25</ShootingAccuracyTurret>
+  	</equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (HeavyGunner) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_HeavyGunner</defName>
-	<label>Phase I Helmet(HeavyGunner)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(HeavyGunner)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(HeavyGunner)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetHeavyGunner</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>45</Plasteel>
-	  <ComponentSpacer>1</ComponentSpacer>
-	</costList>
-	<statBases>
-	  <MaxHitPoints>210</MaxHitPoints>
-	  <Mass>1.6</Mass>
-	  <ArmorRating_Sharp>1.09</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
-	</statBases>
+	  <label>Phase I Helmet(HeavyGunner)</label>
+	  <description>Special operations Phase 1 Helmet trained for heavy weapons</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(HeavyGunner)_UI</texPath>
+  	</graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(HeavyGunner)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetHeavyGunner</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>45</Plasteel>
+	    <ComponentSpacer>1</ComponentSpacer>
+	  </costList>
+	  <statBases>
+	    <MaxHitPoints>210</MaxHitPoints>
+	    <Mass>1.6</Mass>
+	    <ArmorRating_Sharp>1.09</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+	  </statBases>
     <equippedStatOffsets>
-	  <ShootingAccuracyTurret>+0.30</ShootingAccuracyTurret>
-	  <PainShockThreshold>+0.30</PainShockThreshold>
-	</equippedStatOffsets>
+	    <ShootingAccuracyTurret>+0.30</ShootingAccuracyTurret>
+	    <PainShockThreshold>+0.30</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (HeavyAssault) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_HeavyAssault</defName>
-	<label>Phase I Helmet(HeavyAssault)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(HeavyAssault)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(HeavyAssault)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetHeavyAssault</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>47</Plasteel>
-	  <ComponentSpacer>1</ComponentSpacer>
-	</costList>
-	<statBases>
-	  <MaxHitPoints>235</MaxHitPoints>
-	  <Mass>1.6</Mass>
-	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
-	</statBases>
+	  <label>Phase I Helmet(HeavyAssault)</label>
+	  <description>Special operations Phase 1 Helmet trained for heavy assault tactics</description>
+	    <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(HeavyAssault)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(HeavyAssault)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetHeavyAssault</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>47</Plasteel>
+	    <ComponentSpacer>1</ComponentSpacer>
+	  </costList>
+    <statBases>
+	    <MaxHitPoints>235</MaxHitPoints>
+	    <Mass>1.6</Mass>
+	    <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+	  </statBases>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.50</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.50</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (Engineer) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_Engineer</defName>
-	<label>Phase I Helmet(Engineer)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(Engineer)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Engineer)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetEngineer</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>42</Plasteel>
-	  <ComponentSpacer>1</ComponentSpacer>
-	</costList>
+	  <label>Phase I Helmet(Engineer)</label>
+	  <description>Special operations Phase 1 Helmet trained for building construction</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(Engineer)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(Engineer)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetEngineer</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>42</Plasteel>
+	    <ComponentSpacer>1</ComponentSpacer>
+	  </costList>
     <equippedStatOffsets>
-	  <ConstructionSpeedFactor>+0.25</ConstructionSpeedFactor>
-	  <ResearchSpeedFactor>+0.10</ResearchSpeedFactor>
-	  <ShootingAccuracyTurret>+0.20</ShootingAccuracyTurret>
-	</equippedStatOffsets>
+	    <ConstructionSpeedFactor>+0.25</ConstructionSpeedFactor>
+	    <ResearchSpeedFactor>+0.10</ResearchSpeedFactor>
+	    <ShootingAccuracyTurret>+0.20</ShootingAccuracyTurret>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Helmet (ARF) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneHelmetBase">
     <defName>JDSW_PhaseOneHelmet_ARF</defName>
-	<label>Phase I Helmet(ARF)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Helmet_(ARF)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Helmet_(ARF)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIHelmetARF</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>43</Plasteel>
-	  <ComponentSpacer>2</ComponentSpacer>
-	</costList>
+	  <label>Phase I Helmet(ARF)</label>
+	  <description>Special operations Phase 1 Helmet trained for advanced recon</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Helmet_(ARF)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Helmet_(ARF)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIHelmetARF</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>43</Plasteel>
+	    <ComponentSpacer>2</ComponentSpacer>
+	  </costList>
     <equippedStatOffsets>
-	  <ShootingAccuracyPawn>+0.10</ShootingAccuracyPawn>
-	  <MeleeHitChance>+0.10</MeleeHitChance>
-	  <MeleeDodgeChance>+0.15</MeleeDodgeChance>
+	    <ShootingAccuracyPawn>+0.10</ShootingAccuracyPawn>
+	    <MeleeHitChance>+0.10</MeleeHitChance>
+	    <MeleeDodgeChance>+0.15</MeleeDodgeChance>
       <AimingDelayFactor>-0.20</AimingDelayFactor>
-	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
-	</equippedStatOffsets>
+	    <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+  	</equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
-  
+
 	<!--==============================================
 	================= OnSkin Base =====================
 	===============================================-->
 
   <ThingDef ParentName="ApparelMakeableBase" >
     <defName>JDSW_V1_BodyGlove_Standard</defName>
-	<label>BodyGlove V1 (Standard)</label>
-	<description>Form-fitting garment. Many types of armor, including the type worn by The clone troopers of the Galactic Republic, included an insulated, and sometimes airtight, body glove underneath the armor plating.Military and paramilitary combat groups.wore body gloves, as the garments allowed much freedom of motion. Additionally, body gloves were worn as clothing in and of themselves.</description>
-	<techLevel>Spacer</techLevel>
-	<tradeability>Sellable</tradeability>
-	<generateCommonality>0</generateCommonality>
-	<generateAllowChance>0</generateAllowChance>
-	<graphicData>
-	  <texPath>Things/Apparel/Standard_v1_BodyGlove_UI</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-	  <WorkToMake>5000</WorkToMake>
-	  <MaxHitPoints>170</MaxHitPoints>
-	  <Mass>0.20</Mass>
-	  <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.35</ArmorRating_Heat>
-	  <Insulation_Cold>20</Insulation_Cold>
-	  <Insulation_Heat>20</Insulation_Heat>
-	  <EquipDelay>2</EquipDelay>
-	</statBases>
-	<equippedStatOffsets>
-	  <MoveSpeed>+0.05</MoveSpeed>
-	</equippedStatOffsets>
-	<costList>
-	  <Cloth>30</Cloth>
-	</costList>
-	<recipeMaker>
-	  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-	  <researchPrerequisite>JDSPhaseIArmorStart</researchPrerequisite>	
-	  <skillRequirements>
-	    <Crafting>7</Crafting>
-	  </skillRequirements>
-	  <recipeUsers Inherit="False">
-	    <li>FabricationBench</li>
-	  </recipeUsers>
-	</recipeMaker>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Standard_v1_BodyGlove</wornGraphicPath>
-	  <bodyPartGroups>
-		<li>Neck</li>
-	    <li>Shoulders</li>
-		<li>Arms</li>
-		<li>Hands</li>
-		<li>Torso</li>
-		<li>Waist</li>
-		<li>Legs</li>
-		<li>Feet</li>
-	  </bodyPartGroups>
-	  <layers>
-	    <li>OnSkin</li>
-	  </layers>
-	  <tags>
-	    <li>PhaseIBodyGlove</li>
-	  </tags>
-	  <defaultOutfitTags>
-	    <li>Soldier</li>
-	  </defaultOutfitTags>
-	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
-	</apparel>
-	<thingCategories Inherit="False">
-	  <li>JDSPhaseIArmoryArmor_Standard</li>
-	</thingCategories>
-  </ThingDef>  
-  
+	  <label>BodyGlove V1 (Standard)</label>
+	  <description>Form-fitting garment. Many types of armor, including the type worn by The clone troopers of the Galactic Republic, included an insulated, and sometimes airtight, body glove underneath the armor plating.Military and paramilitary combat groups.wore body gloves, as the garments allowed much freedom of motion. Additionally, body gloves were worn as clothing in and of themselves.</description>
+	  <techLevel>Spacer</techLevel>
+	  <tradeability>Sellable</tradeability>
+	  <generateCommonality>0</generateCommonality>
+	  <generateAllowChance>0</generateAllowChance>
+	  <graphicData>
+	    <texPath>Things/Apparel/Standard_v1_BodyGlove_UI</texPath>
+	    <graphicClass>Graphic_Single</graphicClass>
+  	</graphicData>
+	  <statBases>
+	    <WorkToMake>5000</WorkToMake>
+	    <MaxHitPoints>170</MaxHitPoints>
+	    <Mass>0.20</Mass>
+	    <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.35</ArmorRating_Heat>
+	    <Insulation_Cold>20</Insulation_Cold>
+	    <Insulation_Heat>20</Insulation_Heat>
+	    <EquipDelay>2</EquipDelay>
+	  </statBases>
+	  <equippedStatOffsets>
+	    <MoveSpeed>+0.05</MoveSpeed>
+	  </equippedStatOffsets>
+  	<costList>
+	    <Cloth>30</Cloth>
+	  </costList>
+	  <recipeMaker>
+	    <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+	    <researchPrerequisite>JDSPhaseIArmorStart</researchPrerequisite>
+	    <skillRequirements>
+	      <Crafting>7</Crafting>
+	    </skillRequirements>
+	    <recipeUsers Inherit="False">
+	      <li>FabricationBench</li>
+	    </recipeUsers>
+	  </recipeMaker>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Standard_v1_BodyGlove</wornGraphicPath>
+	    <bodyPartGroups>
+	   	  <li>Neck</li>
+	      <li>Shoulders</li>
+		    <li>Arms</li>
+	    	<li>Hands</li>
+		    <li>Torso</li>
+		    <li>Waist</li>
+		    <li>Legs</li>
+		    <li>Feet</li>
+	    </bodyPartGroups>
+	    <layers>
+	      <li>OnSkin</li>
+	    </layers>
+	    <tags>
+	      <li>PhaseIBodyGlove</li>
+	    </tags>
+	    <defaultOutfitTags>
+	      <li>Soldier</li>
+	    </defaultOutfitTags>
+	    <useDeflectMetalEffect>true</useDeflectMetalEffect>
+	  </apparel>
+	  <thingCategories Inherit="False">
+	    <li>JDSPhaseIArmoryArmor_Standard</li>
+	  </thingCategories>
+  </ThingDef>
+
 	<!--==============================================
 	================= Armor Base =====================
 	===============================================-->
 
   <ThingDef Name="JDSWPhaseOneArmorBase" ParentName="ApparelMakeableBase" Abstract="True">
-	<techLevel>Spacer</techLevel>
-	<tradeability>Sellable</tradeability>
-	<generateCommonality>0</generateCommonality>
-	<generateAllowChance>0</generateAllowChance>
-	<graphicData>
-	  <graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-	  <WorkToMake>61000</WorkToMake>
-	  <MaxHitPoints>300</MaxHitPoints>
-	  <Mass>13</Mass>
-	  <ArmorRating_Sharp>1.07</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.60</ArmorRating_Heat>
-	  <!--Insulation_Cold>5</Insulation_Cold-->
-	  <!--Insulation_Heat>5</Insulation_Heat-->
-	  <EquipDelay>10</EquipDelay>
-	</statBases>
-	<costList>
-	  <Plasteel>105</Plasteel>
-	  <ComponentSpacer>3</ComponentSpacer>
-	</costList>		
-	<equippedStatOffsets>
-	  <MoveSpeed>-0.10</MoveSpeed>
-	  <Comfort>-0.10</Comfort>
-	</equippedStatOffsets>
-	<recipeMaker>
-	  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-	  <skillRequirements>
-	    <Crafting>7</Crafting>
-	  </skillRequirements>
-	  <recipeUsers Inherit="False">
-	    <li>FabricationBench</li>
-	  </recipeUsers>
-	</recipeMaker>
-	<apparel>
-	  <bodyPartGroups>
-		<li>Neck</li>
-	    <li>Shoulders</li>
-		<li>Arms</li>
-		<li>Hands</li>
-		<li>Torso</li>
-		<li>Waist</li>
-		<li>Legs</li>
-		<li>Feet</li>
-	  </bodyPartGroups>
-	  <layers>
-	    <li>Middle</li>
-	  </layers>
-	  <tags>
-	    <li>EVA</li>
-	    <li>PhaseIArmor</li>
-	  </tags>
-	  <defaultOutfitTags>
-	    <li>Soldier</li>
-	  </defaultOutfitTags>
-	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
-	</apparel>
-	<thingCategories Inherit="False">
-	  <li>JDSPhaseIArmoryArmor_Standard</li>
-	</thingCategories>
+	  <techLevel>Spacer</techLevel>
+	  <tradeability>Sellable</tradeability>
+  	<generateCommonality>0</generateCommonality>
+  	<generateAllowChance>0</generateAllowChance>
+  	<graphicData>
+	    <graphicClass>Graphic_Single</graphicClass>
+   	</graphicData>
+  	<statBases>
+	    <WorkToMake>61000</WorkToMake>
+	    <MaxHitPoints>300</MaxHitPoints>
+	    <Mass>13</Mass>
+	    <ArmorRating_Sharp>1.07</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.60</ArmorRating_Heat>
+	    <!--Insulation_Cold>5</Insulation_Cold-->
+	    <!--Insulation_Heat>5</Insulation_Heat-->
+	    <EquipDelay>10</EquipDelay>
+	  </statBases>
+	  <costList>
+	    <Plasteel>105</Plasteel>
+	    <ComponentSpacer>3</ComponentSpacer>
+	  </costList>
+	  <equippedStatOffsets>
+	    <MoveSpeed>-0.10</MoveSpeed>
+	    <Comfort>-0.10</Comfort>
+  	</equippedStatOffsets>
+  	<recipeMaker>
+	    <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+	    <skillRequirements>
+	      <Crafting>7</Crafting>
+	    </skillRequirements>
+	    <recipeUsers Inherit="False">
+	      <li>FabricationBench</li>
+	    </recipeUsers>
+	    </recipeMaker>
+	  <apparel>
+	    <bodyPartGroups>
+		    <li>Neck</li>
+	      <li>Shoulders</li>
+	    	<li>Arms</li>
+		    <li>Hands</li>
+		    <li>Torso</li>
+		    <li>Waist</li>
+		    <li>Legs</li>
+		    <li>Feet</li>
+	    </bodyPartGroups>
+	    <layers>
+	      <li>Middle</li>
+	    </layers>
+	    <tags>
+	      <li>EVA</li>
+	      <li>PhaseIArmor</li>
+	    </tags>
+	    <defaultOutfitTags>
+	      <li>Soldier</li>
+	    </defaultOutfitTags>
+	    <useDeflectMetalEffect>true</useDeflectMetalEffect>
+	  </apparel>
+	  <thingCategories Inherit="False">
+	    <li>JDSPhaseIArmoryArmor_Standard</li>
+	  </thingCategories>
   </ThingDef>
 
 	<!--============= Phase I Armor (Standard) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneArmorBase">
     <defName>JDSW_PhaseOneArmor_Standard</defName>
-	<label>Phase I Armor(Standard)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Armor_(Standard)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Armor_(Standard)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIArmorStandard</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Armor(Standard)</label>
+	  <description>The Phase I clone trooper armor consisted of twenty form-fitting plates of lightweight plastoid-alloy composite.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Armor_(Standard)_UI</texPath>
+  	</graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Armor_(Standard)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIArmorStandard</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.03</SocialImpact>
-	</equippedStatOffsets>
-	<recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorStart</researchPrerequisite>
-	</recipeMaker>		
+	    <SocialImpact>+0.03</SocialImpact>
+	  </equippedStatOffsets>
+	  <recipeMaker>
+	    <researchPrerequisite>JDSPhaseIArmorStart</researchPrerequisite>
+	  </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Armor (Sergeant) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneArmorBase">
     <defName>JDSW_PhaseOneArmor_Sergeant</defName>
-	<label>Phase I Armor(Sergeant)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Armor_(Sergeant)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Armor_(Sergeant)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIArmorSergeant</li>
-	  </tags>
-	</apparel>
-    <equippedStatOffsets>
-	  <SocialImpact>+0.05</SocialImpact>
-	</equippedStatOffsets>
+	  <label>Phase I Armor(Sergeant)</label>
+  	<description>Phase I armor with splashes of color denoted the military ranks of clone trooper officers, which was considered beneficial for non-clones.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Armor_(Sergeant)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Armor_(Sergeant)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIArmorSergeant</li>
+	    </tags>
+	  </apparel>
+      <equippedStatOffsets>
+	    <SocialImpact>+0.05</SocialImpact>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Armor (Lieutenant) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneArmorBase">
     <defName>JDSW_PhaseOneArmor_Lieutenant</defName>
-	<label>Phase I Armor(Lieutenant)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Armor_(Lieutenant)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Armor_(Lieutenant)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIArmorLieutenant</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Armor(Lieutenant)</label>
+  	<description>Phase I armor with splashes of color denoted the military ranks of clone trooper officers, which was considered beneficial for non-clones.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Armor_(Lieutenant)_UI</texPath>
+	  </graphicData>
+  	<apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Armor_(Lieutenant)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIArmorLieutenant</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.05</SocialImpact>
-	</equippedStatOffsets>
+	    <SocialImpact>+0.05</SocialImpact>
+    </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Armor (Captain) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneArmorBase">
     <defName>JDSW_PhaseOneArmor_Captain</defName>
-	<label>Phase I Armor(Captain)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Armor_(Captain)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Armor_(Captain)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIArmorCaptain</li>
-	  </tags>
-	</apparel>
+	  <label>Phase I Armor(Captain)</label>
+	  <description>Phase I armor with splashes of color denoted the military ranks of clone trooper officers, which was considered beneficial for non-clones.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Armor_(Captain)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Armor_(Captain)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIArmorCaptain</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.05</SocialImpact>
-	</equippedStatOffsets>
+	    <SocialImpact>+0.05</SocialImpact>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Armor (Commander) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneArmorBase">
     <defName>JDSW_PhaseOneArmor_Commander</defName>
-	<label>Phase I Armor(Commander)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Armor_(Commander)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Armor_(Commander)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIArmorCommander</li>
-	  </tags>
-	</apparel>
+  	<label>Phase I Armor(Commander)</label>
+  	<description>Phase I armor with splashes of color denoted the military ranks of clone trooper officers, which was considered beneficial for non-clones.</description>
+  	<graphicData>
+	    <texPath>Things/Apparel/Phase1_Armor_(Commander)_UI</texPath>
+	  </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Armor_(Commander)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIArmorCommander</li>
+	    </tags>
+	  </apparel>
     <equippedStatOffsets>
-	  <SocialImpact>+0.05</SocialImpact>
-	</equippedStatOffsets>
+	    <SocialImpact>+0.05</SocialImpact>
+  	</equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorLeadership</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Armor (ColdAssault) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneArmorBase">
     <defName>JDSW_PhaseOneArmor_ColdAssault</defName>
-	<label>Phase I Armor(ColdAssault)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Armor_(ColdAssault)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Armor_(ColdAssault)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIArmorColdAssault</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>90</Plasteel>
-	  <ComponentSpacer>2</ComponentSpacer>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
-	<statBases>
-	  <WorkToMake>50000</WorkToMake>
-	  <MaxHitPoints>280</MaxHitPoints>
-	  <Mass>11</Mass>
-	  <ArmorRating_Sharp>0.98</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.60</ArmorRating_Heat>
-	  <Insulation_Cold>41</Insulation_Cold>
-	  <Insulation_Heat>15</Insulation_Heat>
-	  <EquipDelay>9</EquipDelay>
-	</statBases>
+	  <label>Phase I Armor(ColdAssault)</label>
+  	<description>Specialized cold-assault gear to handle combat in frigid environments.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Armor_(ColdAssault)_UI</texPath>
+  	</graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Armor_(ColdAssault)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIArmorColdAssault</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>90</Plasteel>
+	    <ComponentSpacer>2</ComponentSpacer>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
+  	<statBases>
+	    <WorkToMake>50000</WorkToMake>
+	    <MaxHitPoints>280</MaxHitPoints>
+	    <Mass>11</Mass>
+	    <ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.60</ArmorRating_Heat>
+	    <Insulation_Cold>41</Insulation_Cold>
+	    <Insulation_Heat>15</Insulation_Heat>
+	    <EquipDelay>9</EquipDelay>
+	  </statBases>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Armor (Katarn-Class) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneArmorBase">
     <defName>JDSW_PhaseOneArmor_Katarn-Class</defName>
-	<label>Phase I Armor(Katarn-Class)</label>
-	<description>...</description>
-	<graphicData>
-	  <texPath>Things/Apparel/Phase1_Armor_(Katarn-Class)_UI</texPath>
-	</graphicData>
-	<apparel>
-	  <wornGraphicPath>Things/Apparel/Phase1_Armor_(Katarn-Class)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIArmorKatarn-Class</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>110</Plasteel>
-	  <ComponentSpacer>5</ComponentSpacer>
-	  <Uranium>5</Uranium>
-	</costList>
-	<statBases>
-	  <WorkToMake>62500</WorkToMake>
-	  <MaxHitPoints>320</MaxHitPoints>
-	  <Mass>14</Mass>
-	  <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.60</ArmorRating_Heat>
-	  <EquipDelay>10</EquipDelay>
-	</statBases>
-	<equippedStatOffsets>
-	  <MoveSpeed>+0.15</MoveSpeed>
-	  <Comfort>+0.05</Comfort>
-	  <Beauty>+5</Beauty>
-	</equippedStatOffsets>
+	  <label>Phase I Armor(Katarn-Class)</label>
+	  <description>This armor was more expensive and provided better protection than standard clone armor.</description>
+	  <graphicData>
+	    <texPath>Things/Apparel/Phase1_Armor_(Katarn-Class)_UI</texPath>
+	   </graphicData>
+	  <apparel>
+	    <wornGraphicPath>Things/Apparel/Phase1_Armor_(Katarn-Class)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIArmorKatarn-Class</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>110</Plasteel>
+	    <ComponentSpacer>5</ComponentSpacer>
+	    <Uranium>5</Uranium>
+	  </costList>
+	  <statBases>
+	    <WorkToMake>62500</WorkToMake>
+	    <MaxHitPoints>320</MaxHitPoints>
+	    <Mass>14</Mass>
+	    <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.60</ArmorRating_Heat>
+	    <EquipDelay>10</EquipDelay>
+	  </statBases>
+	  <equippedStatOffsets>
+	    <MoveSpeed>+0.15</MoveSpeed>
+	    <Comfort>+0.05</Comfort>
+	    <Beauty>+5</Beauty>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorComd</researchPrerequisite>
-    </recipeMaker>		
-  </ThingDef>  
-  
+	    <researchPrerequisite>JDSPhaseIArmorComd</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
 	<!--==============================================
 	================== Gear Base =====================
 	===============================================-->
 
   <ThingDef Name="JDSWPhaseOneARCBase" ParentName="ApparelMakeableBase" Abstract="True">
     <techLevel>Spacer</techLevel>
-	<tradeability>Sellable</tradeability>
-	<generateCommonality>0</generateCommonality>
-	<generateAllowChance>0</generateAllowChance>
+	  <tradeability>Sellable</tradeability>
+	  <generateCommonality>0</generateCommonality>
+	  <generateAllowChance>0</generateAllowChance>
     <statBases>
-	  <WorkToMake>5000</WorkToMake>
-	  <MaxHitPoints>150</MaxHitPoints>
-	  <Mass>0.30</Mass>
-	  <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
-	  <!--Insulation_Cold>30</Insulation_Cold-->
-	  <!--Insulation_Heat>15</Insulation_Heat-->
-	  <EquipDelay>1</EquipDelay>
+	    <WorkToMake>5000</WorkToMake>
+	    <MaxHitPoints>150</MaxHitPoints>
+	    <Mass>0.30</Mass>
+	    <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	    <!--Insulation_Cold>30</Insulation_Cold-->
+	    <!--Insulation_Heat>15</Insulation_Heat-->
+	    <EquipDelay>1</EquipDelay>
     </statBases>
     <costList>
-	  <Plasteel>68</Plasteel>
-	  <ComponentSpacer>3</ComponentSpacer>
+	    <Plasteel>68</Plasteel>
+	    <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <recipeMaker>
-	  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-	  <skillRequirements>
-	    <Crafting>7</Crafting>
-	  </skillRequirements>
-	  <recipeUsers Inherit="False">
-		<li>FabricationBench</li>
+	    <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+	    <skillRequirements>
+	      <Crafting>7</Crafting>
+	    </skillRequirements>
+	    <recipeUsers Inherit="False">
+		    <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <apparel>
-	  <layers>
+	    <layers>
         <li>Shell</li>
-	  </layers>
-	  <defaultOutfitTags>
-		<li>Soldier</li>
-	  </defaultOutfitTags>
-	  <tags>
-	    <li>PhaseIGear</li>
-	  </tags>
-	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
+	    </layers>
+	    <defaultOutfitTags>
+		    <li>Soldier</li>
+	    </defaultOutfitTags>
+	    <tags>
+	      <li>PhaseIGear</li>
+	    </tags>
+	    <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <wornGraphicData>
         <renderUtilityAsPack>false</renderUtilityAsPack>
       </wornGraphicData>
-	</apparel>
-	<thingCategories Inherit="False">
-	  <li>JDSPhaseIArmoryGear_Standard</li>
-	</thingCategories>
-  </ThingDef>  
-  
+	  </apparel>
+	  <thingCategories Inherit="False">
+	    <li>JDSPhaseIArmoryGear_Standard</li>
+	  </thingCategories>
+  </ThingDef>
 
 	<!--============= Phase I Gear (HeavyGunner) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_HeavyGunner</defName>
-	<label>Phase I Gear(HeavyGunner)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>Phase I Gear(HeavyGunner)</label>
+	  <description>Specialist Armor plates for in heavy gunners</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(HeavyGunner)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<li>Arms</li>
-		<li>Torso</li>
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(HeavyGunner)</wornGraphicPath>
-	  <tags>
-		<li>PhaseIGearHeavyGunner</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>50</Plasteel>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <li>Arms</li>
+		    <li>Torso</li>
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(HeavyGunner)</wornGraphicPath>
+	    <tags>
+		    <li>PhaseIGearHeavyGunner</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>50</Plasteel>
+	  </costList>
     <statBases>
-	  <MaxHitPoints>180</MaxHitPoints>
-	  <Mass>0.50</Mass>
-	  <ArmorRating_Sharp>0.94</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	    <MaxHitPoints>180</MaxHitPoints>
+	    <Mass>0.50</Mass>
+	    <ArmorRating_Sharp>0.94</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.30</ArmorRating_Heat>
     </statBases>
     <equippedStatOffsets>
-	  <MoveSpeed>-0.05</MoveSpeed>
-	  <PainShockThreshold>+0.22</PainShockThreshold>
-	</equippedStatOffsets>
+	    <MoveSpeed>-0.05</MoveSpeed>
+	    <PainShockThreshold>+0.22</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
-    </recipeMaker>	
-  </ThingDef>  
-  
+	    <researchPrerequisite>JDSPhaseIArmorSpecialist</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
 	<!--============= Phase I Gear (Alpha17a) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Alpha17a</defName>
-	<label>ARC Gear Full(Alpha17a)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear Full(Alpha17a)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Alpha17a)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<li>Arms</li>
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <li>Arms</li>
+		    <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
 	  </bodyPartGroups>
 	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17a)</wornGraphicPath>
 	  <tags>
 	    <li>PhaseIGearAlpha17a</li>
 	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>10</Plasteel>
-	  <Hyperweave>20</Hyperweave>
-	</costList>
+	  </apparel>
     <statBases>
-	  <MaxHitPoints>200</MaxHitPoints>
-	  <Mass>0.41</Mass>
-	  <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	    <MaxHitPoints>200</MaxHitPoints>
+	    <Mass>0.41</Mass>
+	    <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.30</ArmorRating_Heat>
     </statBases>
+    <costList>
+	    <Plasteel>10</Plasteel>
+	    <Hyperweave>20</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.20</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.20</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (Alpha17b) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Alpha17b</defName>
-	<label>ARC Gear Full(Alpha17b)</label>
-	<description>...</description>
-	<graphicData>
+  	<label>ARC Gear Full(Alpha17b)</label>
+  	<description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Alpha17b)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<li>Arms</li>
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17b)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearAlpha17b</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>10</Plasteel>
-	  <Hyperweave>20</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+	    	<li>Arms</li>
+		    <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17b)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearAlpha17b</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>10</Plasteel>
+	    <Hyperweave>20</Hyperweave>
+  	</costList>
     <statBases>
-	  <MaxHitPoints>200</MaxHitPoints>
-	  <Mass>0.41</Mass>
-	  <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	    <MaxHitPoints>200</MaxHitPoints>
+	    <Mass>0.41</Mass>
+	    <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.30</ArmorRating_Heat>
     </statBases>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.20</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.20</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (Alpha17c) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Alpha17c</defName>
-	<label>ARC Gear Full(Alpha17c)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear Full(Alpha17c)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Alpha17c)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<li>Arms</li>
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17c)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearAlpha17c</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>10</Plasteel>
-	  <Hyperweave>20</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <li>Arms</li>
+		    <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17c)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearAlpha17c</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>10</Plasteel>
+	    <Hyperweave>20</Hyperweave>
+	  </costList>
     <statBases>
-	  <MaxHitPoints>200</MaxHitPoints>
-	  <Mass>0.41</Mass>
-	  <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	    <MaxHitPoints>200</MaxHitPoints>
+	    <Mass>0.41</Mass>
+	    <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.30</ArmorRating_Heat>
     </statBases>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.20</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.20</PainShockThreshold>
+    	</equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (Alpha17d) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Alpha17d</defName>
-	<label>ARC Gear Full(Alpha17d)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear Full(Alpha17d)</label>
+  	<description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Alpha17d)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<li>Arms</li>
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17d)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearAlpha17d</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>10</Plasteel>
-	  <Hyperweave>20</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <li>Arms</li>
+	   	  <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17d)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearAlpha17d</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>10</Plasteel>
+	    <Hyperweave>20</Hyperweave>
+	  </costList>
     <statBases>
-	  <MaxHitPoints>200</MaxHitPoints>
-	  <Mass>0.41</Mass>
-	  <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	    <MaxHitPoints>200</MaxHitPoints>
+	    <Mass>0.41</Mass>
+	    <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.30</ArmorRating_Heat>
     </statBases>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.20</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.20</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (Alpha17e) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Alpha17e</defName>
-	<label>ARC Gear Full(Alpha17e)</label>
-	<description>...</description>
-	<graphicData>
+  	<label>ARC Gear Full(Alpha17e)</label>
+  	<description>Additional pieces of equipment</description>
+  	<graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Alpha17e)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<li>Arms</li>
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17e)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearAlpha17e</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>10</Plasteel>
-	  <Hyperweave>20</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <li>Arms</li>
+		    <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Alpha17e)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearAlpha17e</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>10</Plasteel>
+	    <Hyperweave>20</Hyperweave>
+	  </costList>
     <statBases>
-	  <MaxHitPoints>200</MaxHitPoints>
-	  <Mass>0.41</Mass>
-	  <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	    <MaxHitPoints>200</MaxHitPoints>
+	    <Mass>0.41</Mass>
+	    <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+	    <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	    <ArmorRating_Heat>0.30</ArmorRating_Heat>
     </statBases>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.20</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.20</PainShockThreshold>
+  	</equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
-  </ThingDef>  
-  
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
 	<!--============= Phase I Gear (PauldronA0) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron0A</defName>
-	<label>ARC Gear(PauldronA0)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronA0)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronA0)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA0)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron0A</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+	    	<li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA0)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron0A</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+  	</costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronA1) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron1A</defName>
-	<label>ARC Gear(PauldronA1)</label>
-	<description>...</description>
-	<graphicData>
+  	<label>ARC Gear(PauldronA1)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronA1)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA1)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron1A</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA1)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron1A</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronA2) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron2A</defName>
-	<label>ARC Gear(PauldronA2)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronA2)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronA2)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA2)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron2A</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+	    	<li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA2)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron2A</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronA3) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron3A</defName>
-	<label>ARC Gear(PauldronA3)</label>
-	<description>...</description>
-	<graphicData>
+    <label>ARC Gear(PauldronA3)</label>
+  	<description>Additional pieces of equipment</description>
+  	<graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronA3)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA3)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron3A</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA3)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron3A</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronA4) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron4A</defName>
-	<label>ARC Gear(PauldronA4)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronA4)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronA4)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA4)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron4A</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronA4)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron4A</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
-  </ThingDef>  
-  
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
 	<!--============= Phase I Gear (PauldronB0) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron0B</defName>
-	<label>ARC Gear(PauldronB0)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronB0)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronB0)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB0)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron0B</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB0)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron0B</li>
+	    </tags>
+  	</apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronB1) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron1B</defName>
-	<label>ARC Gear(PauldronB1)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronB1)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronB1)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB1)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron1B</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB1)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron1B</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronB2) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron2B</defName>
-	<label>ARC Gear(PauldronB2)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronB2)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronB2)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB2)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron2B</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB2)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron2B</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronB3) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron3B</defName>
-	<label>ARC Gear(PauldronB3)</label>
-	<description>...</description>
-	<graphicData>
+    <label>ARC Gear(PauldronB3)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronB3)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB3)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron3B</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB3)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron3B</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronB4) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron4B</defName>
-	<label>ARC Gear(PauldronB4)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronB4)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronB4)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB4)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron4B</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronB4)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron4B</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+  	</costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronC0) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron0C</defName>
-	<label>ARC Gear(PauldronC0)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronC0)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronC0)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC0)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron0C</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC0)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron0C</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronC1) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron1C</defName>
-	<label>ARC Gear(PauldronC1)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronC1)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronC1)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC1)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron1C</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC1)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron1C</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronC2) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron2C</defName>
-	<label>ARC Gear(PauldronC2)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronC2)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronC2)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC2)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron2C</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC2)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron2C</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronC3) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron3C</defName>
-	<label>ARC Gear(PauldronC3)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronC3)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronC3)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC3)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron3C</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+		    <li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC3)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron3C</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (PauldronC4) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Pauldron4C</defName>
-	<label>ARC Gear(PauldronC4)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(PauldronC4)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(PauldronC4)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <li>Neck</li>
-		<li>Shoulders</li>
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<!--li>Waist</li-->
-		<!--li>Legs</li-->
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC4)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearPauldron4C</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <li>Neck</li>
+	    	<li>Shoulders</li>
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <!--li>Waist</li-->
+		    <!--li>Legs</li-->
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(PauldronC4)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearPauldron4C</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
-  
+
 	<!--============= Phase I Gear (Kama0) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Kama0a</defName>
-	<label>ARC Gear(Kama0)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(Kama0)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Kama0)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <!--li>Neck</li-->
-		<!--li>Shoulders</li-->
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama0)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearKama0a</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>5</Plasteel>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <!--li>Neck</li-->
+		    <!--li>Shoulders</li-->
+	    	<!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama0)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearKama0a</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>5</Plasteel>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (Kama1) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Kama1a</defName>
-	<label>ARC Gear(Kama1)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(Kama1)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Kama1)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <!--li>Neck</li-->
-		<!--li>Shoulders</li-->
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama1)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearKama1a</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>5</Plasteel>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <!--li>Neck</li-->
+		    <!--li>Shoulders</li-->
+	      <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+	      <li>Waist</li>
+	      <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama1)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearKama1a</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>5</Plasteel>
+	    <Hyperweave>10</Hyperweave>
+   	</costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (Kama2) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Kama2a</defName>
-	<label>ARC Gear(Kama2)</label>
-	<description>...</description>
-	<graphicData>
+  	<label>ARC Gear(Kama2)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Kama2)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <!--li>Neck</li-->
-		<!--li>Shoulders</li-->
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama2)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearKama2a</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>5</Plasteel>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <!--li>Neck</li-->
+	    	<!--li>Shoulders</li-->
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama2)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearKama2a</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>5</Plasteel>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (Kama3) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Kama3a</defName>
-	<label>ARC Gear(Kama3)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(Kama3)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Kama3)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <!--li>Neck</li-->
-		<!--li>Shoulders</li-->
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama3)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearKama3a</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>5</Plasteel>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <!--li>Neck</li-->
+		    <!--li>Shoulders</li-->
+		    <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama3)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearKama3a</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>5</Plasteel>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 
 	<!--============= Phase I Gear (Kama4) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneARCBase">
     <defName>JDSW_PhaseOneGear_Kama4a</defName>
-	<label>ARC Gear(Kama4)</label>
-	<description>...</description>
-	<graphicData>
+	  <label>ARC Gear(Kama4)</label>
+	  <description>Additional pieces of equipment</description>
+	  <graphicData>
       <texPath>Things/Apparel/Phase1_Gear_(Kama4)_UI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
-	  <bodyPartGroups>
-	    <!--li>Neck</li-->
-		<!--li>Shoulders</li-->
-		<!--li>Arms</li-->
-		<!--li>Torso</li-->
-		<li>Waist</li>
-		<li>Legs</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama4)</wornGraphicPath>
-	  <tags>
-	    <li>PhaseIGearKama4a</li>
-	  </tags>
-	</apparel>
-	<costList>
-	  <Plasteel>5</Plasteel>
-	  <Hyperweave>10</Hyperweave>
-	</costList>
+	    <bodyPartGroups>
+	      <!--li>Neck</li-->
+	    	<!--li>Shoulders</li-->
+	  	  <!--li>Arms</li-->
+		    <!--li>Torso</li-->
+		    <li>Waist</li>
+		    <li>Legs</li>
+	    </bodyPartGroups>
+	    <wornGraphicPath>Things/Apparel/Phase1_Gear_(Kama4)</wornGraphicPath>
+	    <tags>
+	      <li>PhaseIGearKama4a</li>
+	    </tags>
+	  </apparel>
+	  <costList>
+	    <Plasteel>5</Plasteel>
+	    <Hyperweave>10</Hyperweave>
+	  </costList>
     <equippedStatOffsets>
-	  <PainShockThreshold>+0.10</PainShockThreshold>
-	</equippedStatOffsets>
+	    <PainShockThreshold>+0.10</PainShockThreshold>
+	  </equippedStatOffsets>
     <recipeMaker>
-	  <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
-    </recipeMaker>		
-  </ThingDef>  
-  
+	    <researchPrerequisite>JDSPhaseIArmorARC</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
 	<!--==============================================
 	================ Backpack Base ===================
-	===============================================-->  
+	===============================================-->
 
   <ThingDef Name="JDSWPhaseOneBackpackBase" ParentName="ApparelBase" Abstract="True">
     <recipeMaker>
@@ -1866,7 +1871,7 @@
       <Cloth>30</Cloth>
     </costList>
     <graphicData>
-      <graphicClass>Graphic_Single</graphicClass> 	  
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <WorkToMake>14000</WorkToMake>
@@ -1878,9 +1883,9 @@
       <li>RewardStandardMidFreq</li>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
-	<equippedStatOffsets>
+	  <equippedStatOffsets>
       <CarryingCapacity>30</CarryingCapacity>
-	</equippedStatOffsets>	
+	  </equippedStatOffsets>
     <apparel>
       <wornGraphicData>
         <renderUtilityAsPack>true</renderUtilityAsPack>
@@ -1916,21 +1921,21 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>PackJump</li>
+        <li>Pack</li>
       </tags>
     </apparel>
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
-	<thingCategories Inherit="False">
-	  <li>JDSPhaseIArmoryBP_Standard</li>
-	</thingCategories>	
-  </ThingDef>  
-  
+	  <thingCategories Inherit="False">
+	    <li>JDSPhaseIArmoryBP_Standard</li>
+	  </thingCategories>
+  </ThingDef>
+
   <ThingDef ParentName="JDSWPhaseOneBackpackBase">
     <defName>JDSW_Katarn_Backpack_Standard</defName>
     <label>Katarn Backpack(Standard)</label>
-    <description>...</description>
+    <description>The backpack featured specialized ammunition cartridges that held various types of ammo, and was reconfigurable for many different missions, such as an extra oxygen tank for aquatic and space-borne environments.</description>
     <graphicData>
       <texPath>Things/Apparel/Katarn_Backpack_(Standard)_UI</texPath>
     </graphicData>
@@ -1939,15 +1944,15 @@
     </apparel>
     <recipeMaker>
 	  <researchPrerequisite>JDSPhaseIArmorComd</researchPrerequisite>
-    </recipeMaker>	
-  </ThingDef>  
-  
+    </recipeMaker>
+  </ThingDef>
+
 	<!--============= Katarn Backpack (Heavy) =================-->
 
   <ThingDef ParentName="JDSWPhaseOneBackpackBase">
     <defName>JDSW_Katarn_Backpack_Heavy</defName>
     <label>Katarn Backpack(Heavy)</label>
-    <description>...</description>
+    <description>The backpack featured specialized ammunition cartridges that held various types of ammo, and was reconfigurable for many different missions, such as an extra oxygen tank for aquatic and space-borne environments.</description>
     <graphicData>
       <texPath>Things/Apparel/Katarn_Backpack_(Heavy)_UI</texPath>
     </graphicData>
@@ -1956,7 +1961,7 @@
     </apparel>
     <recipeMaker>
 	  <researchPrerequisite>JDSPhaseIArmorComd</researchPrerequisite>
-    </recipeMaker>	
-  </ThingDef>  
-  
+    </recipeMaker>
+  </ThingDef>
+
 </Defs>
