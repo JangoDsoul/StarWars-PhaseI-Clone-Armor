@@ -1,57 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
   <ModMetaData>
-	<name>[JDS] Star Wars Phase I Clone Armor</name>
+	<name>[JDS] StarWars - Phase I Clone Armor</name>
 	<author>JangoD'soul</author>
 	<supportedVersions>
 	  <li>1.0</li>
 	  <li>1.1</li>
-	  <li>1.2</li>	
-	  <li>1.3</li>	  
+	  <li>1.2</li>
+	  <li>1.3</li>
+    <li>1.4</li>
+    <li>1.5</li>
 	</supportedVersions>
 	<packageId>JangoDsoul.StarWars.PICAS</packageId>
 	<description>
-This mod add StarWar:clone war armor set and my second mod other then "Fallout T-45" for A14 . I still don't know how to code that will so if something bug i'll try to fix it
+    [img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 
-Note:All Phase I armor has same base stat
+    This mod adds Helmets and armors from StarWars Clone Wars
 
-Features:
-Standard Phase I Armor
-- Colored White
-Sergeant Phase I Armor
-- Colored Green
-Lieuteant Phase I Armor
-- Colored Blue
-Captain Phase I Armor
-- Colored Red
-Commander Phase I Armor
--Colored Yellow
-ARC Phase I Armor
-Commando Phase I Armor
-ARF Standard Helmet
-Special Ops StandardHelmet
-Standard Pilot Standard Helme
-Cold Assualt Armor Set
+    [h1]Features:[/h1]
+    - Adds 16 Phase I Clone Helmets
+    - Adds 8 Armor
+    - Adds 1 Apparel
+    - Adds 26 Equipment
+    - Adds 2 Backpack
 
-Crafting Requirements:
--Craftable
--Research Requirements: Fabrication
+    [b]If you have probelms/issue or want to help me develops more just join my [url=https://discord.com/invite/ZYFEhyNrES]Discord[/url].[/b]
 
-Phase I Helmet
--Crafting Skill: 8
--Steel: x40
--Plasteel: x20
--Component: x4
--Advanced Component: x1
 
-Phase I Armor
--Crafting Skill: 8
--Steel: x120
--Plasteel: x50
--Component: x8
--Advanced Component: x1
+    Credit:
+    Star Wars - George Lucas
+    [url=https://creativecommons.org/licenses/by-nc-nd/4.0/] CC BY-NC-ND 4.0 [/url]
 
-Credit:
-dninemfive - For using his .dll Code for the shielding	
+    [b]You may create patches or translation for this mod, as long as you do not re-upload artwork or code.
+
+    Do NOT upload this mod on other websites.[/b]
 	</description>
 </ModMetaData>
